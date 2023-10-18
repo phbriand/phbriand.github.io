@@ -1,0 +1,4 @@
+AuthName "Documents cours MATH326 : acces restreint" 
+AuthType Basic
+AuthUserFile "/home/httpd/html/sitelama/Membres/pages_web/briand/docs/.htpasswd"
+Require valid-user
