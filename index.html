@@ -1,691 +1,257 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>index</title>
-
-
-<style type="text/css">
-body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding: 30px; }
-
-body > *:first-child {
-  margin-top: 0 !important; }
-body > *:last-child {
-  margin-bottom: 0 !important; }
-
-a {
-  color: #4183C4; }
-a.absent {
-  color: #cc0000; }
-a.anchor {
-  display: block;
-  padding-left: 30px;
-  margin-left: -30px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  cursor: text;
-  position: relative; }
-
-h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
-  text-decoration: none; }
-
-h1 tt, h1 code {
-  font-size: inherit; }
-
-h2 tt, h2 code {
-  font-size: inherit; }
-
-h3 tt, h3 code {
-  font-size: inherit; }
-
-h4 tt, h4 code {
-  font-size: inherit; }
-
-h5 tt, h5 code {
-  font-size: inherit; }
-
-h6 tt, h6 code {
-  font-size: inherit; }
-
-h1 {
-  font-size: 28px;
-  color: black; }
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #cccccc;
-  color: black; }
-
-h3 {
-  font-size: 18px; }
-
-h4 {
-  font-size: 16px; }
-
-h5 {
-  font-size: 14px; }
-
-h6 {
-  color: #777777;
-  font-size: 14px; }
-
-p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
-
-hr {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
-  border: 0 none;
-  color: #cccccc;
-  height: 4px;
-  padding: 0;
-}
-
-body > h2:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-body > h1:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-  body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0; }
-
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
-  margin-top: 0; }
-
-li p.first {
-  display: inline-block; }
-li {
-  margin: 0; }
-ul, ol {
-  padding-left: 30px; }
-
-ul :first-child, ol :first-child {
-  margin-top: 0; }
-
-dl {
-  padding: 0; }
-  dl dt {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    margin: 15px 0 5px; }
-    dl dt:first-child {
-      padding: 0; }
-    dl dt > :first-child {
-      margin-top: 0; }
-    dl dt > :last-child {
-      margin-bottom: 0; }
-  dl dd {
-    margin: 0 0 15px;
-    padding: 0 15px; }
-    dl dd > :first-child {
-      margin-top: 0; }
-    dl dd > :last-child {
-      margin-bottom: 0; }
-
-blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-table {
-  padding: 0;border-collapse: collapse; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
-
-img {
-  max-width: 100%; }
-
-span.frame {
-  display: block;
-  overflow: hidden; }
-  span.frame > span {
-    border: 1px solid #dddddd;
-    display: block;
-    float: left;
-    overflow: hidden;
-    margin: 13px 0 0;
-    padding: 7px;
-    width: auto; }
-  span.frame span img {
-    display: block;
-    float: left; }
-  span.frame span span {
-    clear: both;
-    color: #333333;
-    display: block;
-    padding: 5px 0 0; }
-span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center; }
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center; }
-span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right; }
-  span.align-right span img {
-    margin: 0;
-    text-align: right; }
-span.float-left {
-  display: block;
-  margin-right: 13px;
-  overflow: hidden;
-  float: left; }
-  span.float-left span {
-    margin: 13px 0 0; }
-span.float-right {
-  display: block;
-  margin-left: 13px;
-  overflow: hidden;
-  float: right; }
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right; }
-
-code, tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px; }
-
-pre code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent; }
-
-.highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-  pre code, pre tt {
-    background-color: transparent;
-    border: none; }
-
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-
-kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb
-}
-
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:0 auto;
-    }
-}
-@media print {
-	table, pre {
-		page-break-inside: avoid;
-	}
-	pre {
-		word-wrap: break-word;
-	}
-}
-</style>
-
-
-</head>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="Affiliation" content="Université de Savoie" />
+		<meta name="Author" content="Philippe Briand" />
+		<meta name="Email" content="philippe.briand@univ-savoie.fr" />
+		<meta name="Format" content="complete" />
+		<meta name="Keywords" content="probability, probabilités, sde, eds, bsde, edsr" />
+		<link type="text/css" rel="stylesheet" href="css/simple.css" />
+		<title>Philippe Briand</title>
+	</head>
+	
 <body>
 
-<h1 id="toc_0">Ensemble pour une université ambitieuse et humaine</h1>
 
-<blockquote>
-<p>Informations pratiques des listes Ensemble pour une université ambitieuse et humaine</p>
+<div style="position: absolute; right: 10px; top: 27px; width: 120px; height: 160px;">
+	<img src="images/philippe.jpg" alt="" style="width: 120px; height: 160px;" />
+</div>
 
-<p>Dernière mise à jour : 2020-11-02</p>
-</blockquote>
 
-<h2 id="toc_1">Calendrier des réunions</h2>
 
-<blockquote>
-<p>En raison de la situation sanitaire, toutes les réunions se dérouleront en visioconférence</p>
-</blockquote>
+<div style="font-family: arial, sans-serif; text-align: left; border-top: 2px solid darkred; border-bottom: 2px solid darkred; margin-bottom: 20px; min-height: 200px; padding-left: 20px">
+	
+		<div style="font-size: 165%; font-weight: bold; margin: 20px 0 15px 0;">Philippe Briand</div>
+		<div style="font-size: 120%; margin: 15px 0 15px 0;">Professor</div>
+		
+		<div style="font-family: courier, monospace; font-size: 95%; margin: 5px 100px 15px 0px; float: left;">	
+			Email: <a href="mailto:philippe.briand@univ-smb.fr">philippe.briand@univ-smb.fr</a> <br />
+			Phone: +33 4 79 75 94 41<br />
+			Fax: +33 4 79 75 81 42 	
+		</div>
+		
+		<div style="font-family: courier, monospace; font-size: 95%; margin: -40px 0px 15px 0px; float: left;">
+			<b>Postal address:</b><br /><br />
+			Université Savoie Mont Blanc,<br />
+			LAMA UMR 5127, <br /> 
+			Bâtiment Chablais,<br />
+			73376 Le Bourget-du-Lac Cedex, France
+		</div>
+		
+</div>
 
-<h3 id="toc_2">Réunions sur les sites</h3>
+<div style="font-family: arial; text-align: center;  border-bottom: 2px solid darkred; margin-bottom: 25px; padding-bottom: 20px">
+
+<a style="margin: 0 35px 0 35px" href="#rech">Research - Recherche</a> <a style="margin: 0 35px 0 35px" href="#ens">Enseignement - Teaching</a> 
+<!-- <a style="margin: 0 35px 0 35px" href="#adm">Responsabilités - Administrative duties</a> -->
+
+</div>
+
+<div class="main">
+	
+	
+<h4>I am currently:</h4>
+	
+	<h4 style="margin: 20px">Professor at <a href="http://www.univ-smb.fr">university Savoie Mont Blanc</a> in Chambéry</h4>
+	
+	
+	<h4 style="margin: 20px">Vice-president of <a href="http://www.univ-smb.fr">university Savoie Mont Blanc</a> </h4>
+	
+	<h4 style="margin: 20px">Associate editor for <a href="https://ees.elsevier.com/stapro/">Statistics and Probability Letters</a> </h4>
+	
+<h4>I was recently:</h4>
+
+	<h4 style="margin: 20px">Scientific deputy director at <a href="http://www.cnrs.fr">CNRS</a>, <a href="http://www.cnrs.fr/insmi/">Insmi</a> — 09/2018 - 01/2021</h4>
+
+	<h4 style="margin: 20px">Director of the mathematics laboratory <a href="http://www.lama.univ-savoie.fr/">UMR 5127</a>, CNRS & USMB — 03/2014 - 08/2018</h4>
+
+	<h4 style="margin: 20px">Scientific advisor for the research department of <a href="http://www.hceres.fr">Hcéres</a> (the french evaluation agency) — 09/2016 - 08/2018</h4>
+
+<h1 id="rech">Research — <em>Recherche</em></h1>
+
+<h2>Main Topics — <em>Sujets principaux</em></h2>
 
 <ul>
-<li>Annecy : 12/11 de 12h15 à 13h30</li>
-<li>Bourget  : 10/11 de 12h15 à 13h30</li>
-<li>Jacob : 06/11 de 12h15 à 13h30</li>
+<li>Stochastic Differential Equations, Backward Stochastic Differential Equations</li>
+<li>Stochastic Calculus and Applications</li>
+<li>Probabilistic Methods for PDEs</li>
 </ul>
 
-<h3 id="toc_3">Rencontres avec les personnels BIATSS</h3>
+<!-- <h3>My actual research focuses on Stochastic Differential Equations with Mean reflexion:</h3> -->
+
+
+
+<h2>Last Papers — <em>Publications récentes</em></h2>
 
 <ul>
-<li>Annecy : 16/11 de 12h15 à 13h30</li>
-<li>Bourget : 17/11 de 12h15 à 13h30</li>
-<li>Jacob : 09/11 de 12h15 à 13h30</li>
-<li>Marcoz : 20/11 de 12h15 à 13h30</li>
+	<li>
+		with Céline Acary-Robert, Abir Ghannoum and Céline Labart, <em>Simulation of Mckean-vlasov BSDEs by Wiener Chaos Expansion</em>. <a href="http://hal.univ-smb.fr/hal-01976770">hal-01976770</a>
+	</li>
+	<li>
+		with Christel Geiss, Stefan Geiss and Céline Labart, <em>Donsker-Type Theorem for BSDEs: Rate of Convergence</em>, Bernoulli 27 (2021), no. 2, 899-929. <a href="https://arxiv.org/abs/1908.01188">arXiv:1908.01188</a>
+	</li>
+	<li>
+		with Hélène Hibon, <em>Particles Systems for Mean Reflected BSDEs</em>, Stochastic Process. Appl. 131 (2021), 253-275. <a href="http://arxiv.org/abs/1712.07385">arXiv:1712.07385</a>
+	</li>
+	<li>
+		with Pierre Cardaliaguet, Paul-Éric Chaudru de Raynal and Ying Hu, <em>Forward and Backward Stochastic Differential Equations with normal constraint in law</em>, Stochastic Process. Appl. 130 (2020), 7021-7097. <a href="https://arxiv.org/abs/1903.01114">arXiv:1903.01114</a>
+	</li>
+	<li>
+		with Abir Ghannoum and Céline Labart, <em>Mean Reflected Stochastic Differential Equations with Jumps</em>, Adv. in Appl. Probab. 52 (2020), no. 2, 523–562. <a href="http://hal.univ-smb.fr/hal-01742164">hal-01742164</a>
+	</li>
+	<li>
+		with Paul-Éric Chaudru de Raynal, Arnaud Guillin and Céline labart, <em>Particles systems and numerical schemes for mean reflected stochastic differential equations</em>, Ann. Appl. Probab. 30 (2020), no. 4, 1884–1909.<a href="http://arxiv.org/abs/1612.06886">arXiv:1612.06886</a>
+	</li>
+	<li>
+		with Adrien Richou, <em>On the uniqueness of solutions to quadratic BSDEs with non-convex generators</em>, Frontiers in stochastic analysis—BSDEs, SPDEs and their applications, 89–107, Springer Proc. Math. Stat., 289, Springer, Cham, 2019. <a href="http://arxiv.org/abs/1801.00157">arXiv:1801.00157</a>
+	</li>
+	<li>
+		with Romuald Elie and Ying Hu, <em>BSDEs with Mean Reflexion</em>, Ann. Appl. Probab. 28 (2018), no. 1, 482–510. <a href="http://arxiv.org/abs/1605.06301">arXiv:1605.06301</a>
+	</li>
 </ul>
 
-<h3 id="toc_4">Rencontres avec les laboratoires</h3>
+<!-- <ul>
+	<li>
+		with <a href="mailto:fulvia.confortola@unimib.it">F. Confortola</a>, Quadratic BSDEs with random terminal time and elliptic PDEs in infinite dimension,  &nbsp;&nbsp;&nbsp; <a href="http://arxiv.org/abs/0704.1223">arXiv</a>.
+	</li>
+	<li>
+		with <a href="http://perso.univ-rennes1.fr/ying.hu/">Y. Hu</a>, Quadratic BSDEs with convex generators and unbounded terminal conditions, <a href="http://www.springer.com/journal/00440/about">Probab. Theory Related Fields</a>, &nbsp; <em>to appear</em>. &nbsp;&nbsp;&nbsp; <a href="http://arxiv.org/abs/math.PR/0703423">arXiv</a> &#8212; <a href="http://hal.archives-ouvertes.fr/hal-00136605">HAL</a>.
+	</li>
+	<li>
+		with <a href="mailto:fulvia.confortola@unimib.it">F. Confortola</a>, BSDEs with stochastic Lipschitz condition and quadratic PDEs in Hilbert spaces, <a href="http://www.elsevier.com/wps/product/cws_home/505572" title="Stochastic Processes and their Applications">Stochastic Process. Appl.</a>, &nbsp; <em>to appear</em>. &nbsp;&nbsp;&nbsp; <a href="http://arxiv.org/abs/math.PR/0701849">arXiv</a> &#8212; <a href="http://hal.archives-ouvertes.fr/hal-00127337">HAL</a>.
+	</li>
+	<li>
+		with <a href="mailto:fulvia.confortola@unimib.it">F. Confortola</a>, Differentiability of backward stochastic differential equations in Hilbert spaces with monotone generators, <a href="http://www.springer.com/journal/00245/about">Appl. Math. Optim.</a>,&nbsp; <em>to appear</em>. &nbsp;&nbsp;&nbsp; <a href="http://arxiv.org/abs/math.PR/0603428">arXiv</a> &#8212; <a href="http://hal.archives-ouvertes.fr/hal-00021135">HAL</a>.
+	</li>
+	<li>
+	with <a href="mailto:jean-pierre.lepeltier@univ-lemans.fr">J.-P. Lepeltier</a> and <a href="mailto:jsanmart@dim.uchile.cl">J. San Martín</a>,  One-dimesional BSDE&#8217;s whose coefficient is monotonic in y and non-lipschitz in z, <a href="http://isi.cbs.nl/bernoulli/" title="Journal of the Bernoulli Society">Bernoulli</a> <strong>13</strong> (2007), 80-91. &nbsp;&nbsp;&nbsp; <a href="docs/blsm.pdf">PDF file</a>.
+	</li>
+	<li>
+		with <a href="http://perso.univ-rennes1.fr/ying.hu/">Y. Hu</a>, BSDE with quadratic growth and unbounded terminal value, <a href="http://www.springer.com/journal/00440/about">Probab. Theory Related Fields</a> <strong>136</strong> (2006), 604-618.
+	</li>
+</ul> -->
+
+<!-- <blockquote>
+  <p><img id="frg" src="images/goto.png" alt="FRG" title="FRG" width="16px" height="16px" /> <strong><a href="rech/publis.html">Full list of publications</a></strong></p>
+</blockquote> -->
+
+<h1 id="ens">Enseignement — <em>Teaching</em></h1>
+<!--
+<center id="mmd" style="font-size:120%">
+<strong>
+<a href="http://www.lama.univ-savoie.fr/lama-html/master_mmd/generated/index.html">Master Modélisation et Mathématiques de la Décision</a>
+</strong>
+</center>
+-->
+
+<h2>Cours 2020/2021</h2>
 
 <ul>
-<li>ISTERRE, IREGE, LAMA, LAPP, LAPTh, LISTIC, SYMME : printemps 2020</li>
-<li>CARRTEL, LECA : 20/11 de 12h à 14h</li>
-<li>CERDAF : 16/11 de 12h à 14h</li>
-<li>IMEP-LAHC : 20/11 de 10h à 12h</li>
-<li>LLESTI : 16/11 de 14h à 16h </li>
+	<li><a href="MATH703/">Master de mathématiques — MATH703</a> : Martingales et chaînes de Markov</li>
 </ul>
 
-<h2 id="toc_5">L&#39;équipe</h2>
+<h2>Cours 2019/2020</h2>
 
 <ul>
-<li>Philippe GALEZ, président du conseil d’administration (CA) et du conseil académique (Cac)</li>
-<li>Philippe BRIAND, vice-président du CA, 1<sup>er^</sup> vice-président
-
-<ul>
-<li>Ressources humaines, personnels, égalité femme-homme, systèmes d’information</li>
-</ul></li>
-<li>Thierry ROLANDO, vice-président du CA
-
-<ul>
-<li>Finances, qualité, politique contractuelle</li>
-</ul></li>
-<li>Mareva SABATIER, vice-présidente Recherche, vice-présidente du CAc</li>
-<li>Jean-François DREUILLE, vice-président Formation, vice-président du CAc</li>
-<li>Laurence VIGNOLLET, vice-présidente Relations internationales</li>
-<li>Gilles FRAISSE, vice-président Patrimoine et transition énergétique</li>
-<li>Patrice MÉLÉ, vice-président en charge du numérique et des systèmes d’information
-
-<ul>
-<li>Auprès de Philippe BRIAND</li>
-</ul></li>
-<li>Nicolas FORESTIER, vice-président en charge de la valorisation et des relations contractuelles avec   les entreprises
-
-<ul>
-<li>Auprès de Mareva SABATIER</li>
-</ul></li>
-<li>Bernard CARON, vice-président en charge de la transformation du 1er cycle universitaire
-
-<ul>
-<li>Auprès de Jean-François DREUILLE</li>
-</ul></li>
-<li>David MELO, vice-président en charge de l’orientation, des relations avec les lycées et de l’insertion professionnelle
-
-<ul>
-<li>Auprès de Jean-François DREUILLE</li>
-</ul></li>
-<li>Cristina VIGNALI de POLI, vice-présidente en charge de la vie de campus, de la culture, de la culture     scientifique, technique et industrielle, et de l’animation de la lutte contre les discriminations
-
-<ul>
-<li>Auprès de Jean-François DREUILLE et de Mareva SABATIER</li>
-</ul></li>
+	<li><a href="MATH703/">Master de mathématiques — MATH703</a> : Martingales et chaînes de Markov</li>
 </ul>
 
-<h2 id="toc_6">Documents de campagne</h2>
+<h2>Jyvaskyla Summer School 2019</h2>
 
 <ul>
-<li><a href="Ensemble_Annonce.pdf">Annonce de candidature</a></li>
-<li><a href="Ensemble_Programme.pdf">Programme</a></li>
-<li>Profession de foi </li>
+	<li>Selected Topics in the Theory of BSDEs: <a href="JSS_1908_notes.pdf">Lecture Notes</a> — <a href="JSS_1908_lecture.pdf">Presentation</a> — last update 19-08-09</li>
+	<li>Selected Topics in the Theory of BSDEs: <a href="JSS_1908_notes5.pdf">Notes of Lecture 5</a> — <a href="JSS_1908_lecture5.pdf">Presentation</a> — last update 19-08-08</li>
+	<li><a href="JSS_1908_exam.pdf">Exam</a></li>
 </ul>
 
-<h2 id="toc_7">Nos listes</h2>
+
+
+<h2>Cours 2018/2019</h2>
 
 <ul>
-<li><a href="NosListes.pdf">Les listes</a> Ensemble pour une université ambitieuse et humaine</li>
+	<li><a href="MATH703/">Master de mathématiques — MATH703</a> : Martingales et chaînes de Markov</li>
 </ul>
 
-<h3 id="toc_8">Conseil d&#39;administration</h3>
+<h2>Cours 2017/2018</h2>
 
-<table>
-<thead>
-<tr>
-<th>Collège A</th>
-<th>Collège B</th>
-</tr>
-</thead>
+<ul>
+	<li><a href="MATH703/">Master de mathématiques — MATH703</a> : Martingales et chaînes de Markov</li>
+	<li><a href="MATH602/">Licence de mathématiques — MATH602</a> : Intégration</li>	
+</ul>
 
-<tbody>
-<tr>
-<td><em>Professeurs et personnels assimilés</em></td>
-<td><em>Autres enseignants-chercheurs, enseignants et personnels assimilés</em></td>
-</tr>
-<tr>
-<td>GALEZ Philippe</td>
-<td>NARDELLI-MALGRAND Anne-Sophie</td>
-</tr>
-<tr>
-<td>SMEDING Annique</td>
-<td>TICHADOU Stéphane</td>
-</tr>
-<tr>
-<td>JOYE Jean-François</td>
-<td>ALLOUI Ilham</td>
-</tr>
-<tr>
-<td>BOCQUET Rachel</td>
-<td>ROUX Jean-François</td>
-</tr>
-<tr>
-<td>BUSKULIC Damir</td>
-<td>PERRIN Lara</td>
-</tr>
-<tr>
-<td>THÉVENARD-PUTHOD Catherine</td>
-<td>TANGUY Jérémy</td>
-</tr>
-<tr>
-<td>STUTZ Benoît</td>
-<td>ANDRÉ-PINA Sandrine</td>
-</tr>
-<tr>
-<td>BAS Corinne</td>
-<td>SAMOZINO Pierre</td>
-</tr>
-</tbody>
-</table>
+<h2>Cours 2016/2017</h2>
 
-<h3 id="toc_9">Commission de la recherche du conseil académique</h3>
+<ul>
+	<li><a href="MATH101/">Portail MPC — MATH101</a> : Mathématiques Générales 1</li>
+	<li><a href="http://ead-sciences-bourget.univ-savoie.fr/moodle/course/view.php?id=278">MATH324</a> : Analyse numérique</li>
+	<li><a href="MAT2/">IUT Chambéry — DUT Génie Civil</a> : Mathématiques 2</li>	
+</ul>
 
-<table>
-<thead>
-<tr>
-<th>Collège A</th>
-<th>Collège A</th>
-<th>Collège A</th>
-</tr>
-</thead>
+<h2>Cours 2015/2016</h2>
 
-<tbody>
-<tr>
-<td><em>Professeurs et assimilés - DEG</em></td>
-<td><em>Professeurs et assimilés - LSHS</em></td>
-<td><em>Professeurs et assimilés - ST</em></td>
-</tr>
-<tr>
-<td>QUEZEL-AMBRUNAZ Christophe</td>
-<td>HOT Pascal</td>
-<td>POULENARD Jérôme</td>
-</tr>
-<tr>
-<td>FAVRE-BONTÉ Véronique</td>
-<td>GAUCHON Christophe</td>
-<td>GALICHET Sylvie</td>
-</tr>
-<tr>
-<td>MENCARELLI Rémi</td>
-<td>GUERRAZ Michel</td>
-<td>BADEL Adrien</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>REGIMBAU Tania</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>BUCUR Dorin</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>GONZE Évelyne</td>
-</tr>
-</tbody>
-</table>
+<ul>
+	<li><a href="MATH504/">MATH532 — Annecy</a> : Probabilités 1</li>
+	<li><a href="MATH504/">MATH632 — Annecy</a> : Probabilités 2</li>
+	<li><a href="MAT2/">IUT Chambéry — DUT Génie Civil</a> : Mathématiques 2</li>	
+</ul>
 
-<table>
-<thead>
-<tr>
-<th>Collège B</th>
-<th>Collège B</th>
-<th>Collège B</th>
-</tr>
-</thead>
+<h2>Cours 2014/2015</h2>
 
-<tbody>
-<tr>
-<td><em>Autres personnels habilités à diriger des recherches - DEG</em></td>
-<td><em>Autres personnels habilités à diriger des recherches - LSHS</em></td>
-<td><em>Autres personnels habilités à diriger des recherches - ST</em></td>
-</tr>
-<tr>
-<td>CHARLIER Dorothée</td>
-<td>CARRÉ Arnaud</td>
-<td>NEYERTZ-BROWN Sylvie</td>
-</tr>
-</tbody>
-</table>
+<ul>
+	<li><a href="MATH504/">MATH532 — Annecy</a> : Probabilités 1</li>
+	<li><a href="MATH504/">MATH632 — Annecy</a> : Probabilités 2</li>
+	<li><a href="MAT2/">IUT Chambéry — DUT Génie Civil</a> : Mathématiques 2</li>	
+</ul>
 
-<table>
-<thead>
-<tr>
-<th>Collège C</th>
-<th>Collège C</th>
-<th>Collège C</th>
-</tr>
-</thead>
+<h2>Cours 2013/2014</h2>
 
-<tbody>
-<tr>
-<td><em>Autres personnels  titulaires d’un doctorat - DEG</em></td>
-<td><em>Autres personnels  titulaires d’un doctorat - LSHS</em></td>
-<td><em>Autres personnels  titulaires d’un doctorat - ST</em></td>
-</tr>
-<tr>
-<td>DUBOULOZ Sandra</td>
-<td>PÉPY Émilie-Anne</td>
-<td>COLLOMBET Marielle</td>
-</tr>
-<tr>
-<td>BENELBAZ Clément</td>
-<td>DE POLI Fabrice</td>
-<td>HOURDÉ Christophe</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>HÉRAULT Émilie</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>GALLOT Laurent</td>
-</tr>
-</tbody>
-</table>
+<ul>
+	<li><a href="MATH504/">MATH532 — Annecy</a> : Probabilités 1</li>
+	<li><a href="math_espe/">M1 MEEF Premier Degré</a> : Renforcement mathématique</li>	
+</ul>
+<h2>Cours 2012/2013</h2>
 
-<table>
-<thead>
-<tr>
-<th>Collège D</th>
-</tr>
-</thead>
+<ul>
+	<li><a href="MATH326/">MATH326 — Bourget</a> : Outils Mathématiques 3</li>
+	<li><a href="MATH504/">MATH532 — Annecy</a> : Probabilités 1</li>	
+</ul>
 
-<tbody>
-<tr>
-<td><em>Autres personnels enseignants-chercheurs, enseignants, chercheurs et assimilés</em></td>
-</tr>
-<tr>
-<td>ZEBROWSKI Agathe</td>
-</tr>
-</tbody>
-</table>
+<h2>Cours 2011/2012</h2>
 
-<h3 id="toc_10">Commission de la formation et de la vie universitaire du conseil académique</h3>
+<ul>
+	<li><a href="MATH326/">MATH326</a> : Outils Mathématiques 3</li>
+	<li><a href="MATH504/">MATH504</a> : Probabilités et statistiques</li>	
+</ul>
 
-<table>
-<thead>
-<tr>
-<th>Collège A</th>
-<th>Collège A</th>
-<th>Collège A</th>
-</tr>
-</thead>
+<h2>Cours 2010/2011</h2>
 
-<tbody>
-<tr>
-<td><em>Professeurs et assimilés - DEG</em></td>
-<td><em>Professeurs et assimilés - LSHS</em></td>
-<td><em>Professeurs et assimilés - ST</em></td>
-</tr>
-<tr>
-<td>FADAIRO Muriel</td>
-<td>DELRIEUX Fabrice</td>
-<td>WOLOSZYN Monika</td>
-</tr>
-<tr>
-<td>CALVI Richard</td>
-<td>PIGEON Patrick</td>
-<td>TAILLET Richard</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th>Collège B</th>
-<th>Collège B</th>
-<th>Collège B</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><em>Autres enseignants-chercheurs, enseignants et assimilés - DEG</em></td>
-<td><em>Autres enseignants-chercheurs, enseignants et assimilés - LSHS</em></td>
-<td><em>Autres enseignants-chercheurs, enseignants et assimilés - ST</em></td>
-</tr>
-<tr>
-<td>LEGENDRE Bérangère</td>
-<td>GUICHARD Laurent</td>
-<td>DOMINJON Agnès</td>
-</tr>
-<tr>
-<td>VIAUD Florent</td>
-<td>ROCHE Myriam</td>
-<td>BAUZAC Stéphane</td>
-</tr>
-</tbody>
-</table>
+<ul>
+	<li>
+	<!-- 
+	<a href="http://ead-sciences-bourget.univ-savoie.fr/moodle/course/view.php?id=125">MATH504</a>
+	--> 
+	<a href="MATH504/">MATH504</a>: Probabilités et statistiques
+	</li>
+	<li><a href="MATH906/">MATH906</a> : Modélisation et diagnostic</li>
+</ul>
 
 
+<h2 id="enseignementsantrieurs">Enseignements antérieurs</h2>
 
-<script type="text/x-mathjax-config">
-(function () {
+<ul>
+	<li>Master 1 : probabilités de base &#8212; <a href="proba/">G12</a></li>
+	<li>Master 2 : EDSR et applications &#8212; <a href="edsr/">page du module</a> &#8211; <a href="edsr/poly.pdf">poly</a></li>
+	<li>Master 2 IGR : évaluation des actifs &#8212; <a href="igr/">page du module</a></li>
+</ul>
 
-MathJax.Hub.Config({
-	'showProcessingMessages': false,
-	'messageStyle': 'none'
-});
+</div>
 
-if (typeof MathJaxListener !== 'undefined') {
-	MathJax.Hub.Register.StartupHook('End', function () {
-		MathJaxListener.invokeCallbackForKey_('End');
-	});
-}
-
-})();
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
+<div class="footer">
+<a href="mailto:philippe.briand@univ-savoie.fr">Philippe Briand</a>, université Savoie Mont Blanc, <?= date('d/m/Y', getlastmod()) ?>.
+</div>
 
 </body>
-
 </html>
